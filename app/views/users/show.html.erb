@@ -30,11 +30,11 @@
             <% if user_signed_in? %>
 
                   <% if current_user.already_liked?(t) %>
-                          <%= link_to udon_like_path(id: t.id, udon_id: t.id), method: :delete do %>
+                          <%= button_to udon_like_path(id: t.id, udon_id: t.id), method: :delete do %>
                             <i class="fas fa-heart"></i><%= t.likes.count %>
                           <% end %>
                   <% else %>
-                          <%= link_to udon_likes_path(id: t.id, udon_id: t.id), method: :post do %>
+                          <%= button_to udon_likes_path(id: t.id, udon_id: t.id), method: :post do %>
                               <i class="far fa-heart"></i><%= t.likes.count %>
                           <% end %>
                    <% end %>
