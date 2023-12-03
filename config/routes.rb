@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   #root 'udonstars#index'
   get 'udonstars/index'  => 'udonstars#index'
   get 'udonstars/new'  => 'udonstars#new'
-  post 'udonstars/new'  => 'udonstars#create'
+  post 'udonstars'  => 'udonstars#create'
 
   
   resources :users, only: [:index, :show, :new]
