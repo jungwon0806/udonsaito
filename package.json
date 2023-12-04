@@ -13,15 +13,12 @@
     "webpack-cli": "3.3.12"
   },
   "version": "0.1.0",
+  "engines": {
+    "node": "16.13.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "babel-loader": "^8.2.2",
     "webpack-dev-server": "3"
-  },
-  "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
-    "start": "nuxt start",
-    "generate": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
-    }
+  }
 }
