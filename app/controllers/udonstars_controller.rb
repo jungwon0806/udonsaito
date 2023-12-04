@@ -1,6 +1,6 @@
 class StarsController < ApplicationController
   def index
-   @udonstars = Udonstar.all
+    @udonstars = Udonstar.all
   end
 
   def new
